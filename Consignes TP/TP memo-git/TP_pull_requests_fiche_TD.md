@@ -1,14 +1,14 @@
 # Fiche de TD : travailler en équipe avec les pull requests
 
-Nom et prénom :
+Nom et prénom : BERGER Mathias
 
-Numéro de contributeur (1 à 5) :
+Numéro de contributeur (1 à 5) : 1
 
-Compte GitHub :
+Compte GitHub : MathCod
 
-Adresse du dépôt :
+Adresse du dépôt : https://github.com/MathCod/memo-git/tree/work
 
-Adresse du projet SonarQube Cloud :
+Adresse du projet SonarQube Cloud : https://sonarcloud.io/project/overview?id=MathCod_memo-git
 
 On répond à chaque question au moment où le document de TP l'indique. Quand une question demande de copier un résultat de commande, on le colle dans un bloc de code.
 
@@ -23,26 +23,39 @@ La fiche est individuelle. Si le TP se poursuit sur une autre séance, on la con
 Copier le résultat de `git remote -v`. Quel nom Git donne-t-il au dépôt distant ? Pourquoi la même adresse apparaît-elle sur deux lignes, suivies de `(fetch)` et `(push)` ?
 
 Réponse :
+```
+$ git remote -v
+origin  https://github.com/MathCod/memo-git.git (fetch)
+origin  https://github.com/MathCod/memo-git.git (push)
+```
+Le nom attribué au dépôt distant est origin.
+fetch est pour la récupération et la lecture.
+push est pour l'envoi et l'écriture.
 
-Difficultés rencontrées :
+Difficultés rencontrées : Aucune
 
 ### Q2 (section 1.4)
 
 a) D'après `CONTRIBUTING.md`, quel nom de branche faut-il créer pour corriger le bug décrit dans l'issue #7 « Titres sans syntaxe Markdown sur l'accueil » ?
 
+Le nom doit être : "fix/7-titres-sans-markdown"
+
 b) D'après `README.md`, pourquoi installe-t-on les outils avec `npm ci` plutôt qu'avec `npm install` ?
 
 Réponse :
 
-Difficultés rencontrées :
+`npm ci` installe exactement les versions inscrites dans `package-lock.json`.
+
+Difficultés rencontrées : Aucune
 
 ### Q3 (section 1.6)
 
 Que fait l'option `-u` de `git push -u origin docs/13-contributeur-prenom` ? Quelle commande suffira pour les pushs suivants sur cette branche ?
 
 Réponse :
+`-u` configure une liaison de suivi entre ma branche locale et la branche distante sur origin.
 
-Difficultés rencontrées :
+Difficultés rencontrées : Aucune
 
 ### Q4 (section 1.7)
 
